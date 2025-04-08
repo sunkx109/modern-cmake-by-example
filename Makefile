@@ -7,6 +7,8 @@ all: answer
 # 在这里添加了 answer.o 目标文件。
 objects := main.o answer.o
 
+# $@ 是 Makefile 中的自动变量，表示当前目标文件。 
+
 answer: $(objects)
 	$(CXX) -o $@ $(objects)
 
